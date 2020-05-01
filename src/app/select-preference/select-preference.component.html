@@ -1,0 +1,19 @@
+<div class="page">
+  <div class="picker-container">
+    <div>
+      <h2>Please Select a Date</h2>
+      <novo-date-picker [(ngModel)]="value" [inline]="true"></novo-date-picker>
+    </div>
+    <div>
+      <h2>And Some Times</h2>
+      <div class="time-container">
+        <div class="time" *ngFor="let time of times" (click)="this.select(time)" [ngClass]="{'selected' : isSelected(time)}">
+          <span>
+            {{ time }}
+           </span>
+        </div>
+
+    </div>
+    </div>
+  </div>
+</div>
