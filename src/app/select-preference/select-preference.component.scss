@@ -1,15 +1,39 @@
 :host {
     .page {
         display: flex;
+        flex-direction: column;
         width: 100vw;
         height: 100vh;
         background-color: #F4F4F4;
+        h1 {
+            align-self: center;
+            top: 7%;
+            position: absolute;
+        }
+        >div {
+            height: 100vh;
+            display: flex;
+        }
+        [theme="primary"] {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 11px;
+        }
+        .next-appointment {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-right: 4%;
+        }
         .picker-container{
             display: flex;
             flex-direction: row;
+            position: relative;
             background-color: #FFF;
             width: 50vw;
             height: 50vh;
+            min-width: 700px;
             border-radius: .5vw;
             align-items: center;
             margin: auto;

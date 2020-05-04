@@ -1,0 +1,73 @@
+:host {
+    .page {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-color: #F4F4F4;
+        .picker-container{
+            display: flex;
+            flex-direction: row;
+            background-color: #FFF;
+            width: 50vw;
+            height: 50vh;
+            border-radius: .5vw;
+            align-items: center;
+            margin: auto;
+            justify-content: center;
+            >div {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                justify-content: center;
+                align-items: center;
+                div.time-container {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    max-height: 320px;
+                    overflow-y: scroll;
+                    div.time {
+                        padding: 6px 10px;
+                        margin: 7px;
+                        font-size: 1rem;
+                        align-items: center;
+                        background: #fff;
+                        color: #4a89dc;
+                        border: 2px solid #FFF;
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 2px 7px rgba(0, 0, 0, 0.1);
+                        border-radius: 3px;
+                        text-transform: uppercase;
+                        transition: all 200ms ease-in-out;
+                        cursor: pointer;
+                        text-align: center;
+                        position: relative;
+                        &:hover {
+                            border: 2px solid #4a89dc;
+                        }
+                        &.selected {
+                            border: 2px solid #8CC152;
+                            color: #8CC152;
+                        }
+                    }
+                    &::-webkit-scrollbar {
+                        background-color: #fff;
+                        height: 4px;
+                        width: 4px;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: #babac0;
+                        border-radius: 4px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+  
