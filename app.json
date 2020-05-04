@@ -1,0 +1,7 @@
+  
+{
+    "name": "Appointment Scheduler",
+    "description": "Portal for scheduling appointments",
+    "repository": "https://github.com/charlesabarnes/appointment-scheduler",
+    "keywords": ["charlesabarnes", "appointment-scheduler", "jobs", "angular"]
+  }
